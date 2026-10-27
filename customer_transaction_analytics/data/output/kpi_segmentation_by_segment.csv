@@ -1,0 +1,4 @@
+segment,customers,transactions,total_value,avg_txn_value,avg_spend_per_customer,txns_per_customer,value_share_pct,digital_share_pct
+Standard,18,42,98055.0,2334.64,5447.5,2.33,41.24,33.33
+Student,14,33,74268.66,2250.57,5304.9,2.36,31.24,39.39
+Premium,15,25,65415.82,2616.63,4361.05,1.67,27.52,20.0

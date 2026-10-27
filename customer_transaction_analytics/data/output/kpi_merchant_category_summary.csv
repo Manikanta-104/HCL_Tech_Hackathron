@@ -1,0 +1,5 @@
+merchant_category,merchants,transactions,total_value,avg_value,category_match_pct,repeat_merchant_ratio_pct
+Travel,16,34,89521.14,2632.97,11.76,5.88
+Retail,14,33,80360.41,2435.16,30.3,3.03
+Healthcare,15,29,59753.71,2060.47,13.79,0.0
+Utilities,3,4,8104.22,2026.06,25.0,0.0

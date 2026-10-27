@@ -1,0 +1,5 @@
+time_bucket,transactions,total_value,txn_share_pct
+Night (00-05),25,59767.59,25.0
+Morning (06-11),30,71064.76,30.0
+Afternoon (12-17),20,40473.77,20.0
+Evening (18-23),25,66433.36,25.0

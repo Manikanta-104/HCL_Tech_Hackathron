@@ -1,0 +1,5 @@
+amount_band,transactions,total_value
+Low (<500),12,3576.79
+Medium (500-1.5K),22,21282.39
+High (1.5K-3K),27,58767.77
+Very High (3K+),39,154112.53

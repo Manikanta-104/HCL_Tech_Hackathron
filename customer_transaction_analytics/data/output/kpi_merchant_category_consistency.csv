@@ -1,0 +1,16 @@
+merchant_category,transaction_category,transactions
+Healthcare,Healthcare,4
+Healthcare,Retail,6
+Healthcare,Travel,10
+Healthcare,Utilities,9
+Retail,Healthcare,9
+Retail,Retail,10
+Retail,Travel,6
+Retail,Utilities,8
+Travel,Healthcare,11
+Travel,Retail,10
+Travel,Travel,4
+Travel,Utilities,9
+Utilities,Healthcare,2
+Utilities,Travel,1
+Utilities,Utilities,1

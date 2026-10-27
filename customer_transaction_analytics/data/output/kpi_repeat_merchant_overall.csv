@@ -1,0 +1,2 @@
+transactions,unique_customer_merchant_pairs,repeat_transactions,repeat_merchant_ratio_pct,customers_with_repeat_merchant
+100,97,3,3.0,3

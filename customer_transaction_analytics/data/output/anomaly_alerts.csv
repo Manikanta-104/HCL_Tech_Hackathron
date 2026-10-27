@@ -1,0 +1,125 @@
+alert_id,TransactionID,CustomerID,txn_datetime,Amount,Channel,LocationID,MerchantID,rule_code,rule_name,severity,severity_weight,details
+A00001,T060,C056,2026-01-01 21:00:00,1660.39,Branch,L049,M028,R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,2,Customer prefers Digital but transacted at a Branch
+A00002,T037,C060,2026-01-02 20:00:00,1557.84,Branch,L045,M039,R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,2,Customer prefers Digital but transacted at a Branch
+A00003,T038,C051,2026-01-03 09:00:00,533.48,Digital,L010,M033,R09_CATEGORY_MISMATCH,Category mismatch at risky merchant,Medium,2,"Booked as Travel at Miller PLC, which is registered as Retail (Medium risk merchant)"
+A00004,T044,C044,2026-01-05 10:00:00,4551.14,ATM,L022,M017,R08_HIGH_RISK_MERCHANT,High risk merchant,High,3,"Paid 4,551.14 to Shaw Ltd (M017), rated High risk"
+A00005,T020,C057,2026-01-06 02:00:00,1491.58,Branch,L016,M022,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 02:00, inside the unusual window 00:00 to 04:59"
+A00006,T020,C057,2026-01-06 02:00:00,1491.58,Branch,L016,M022,R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,2,Customer prefers Digital but transacted at a Branch
+A00007,T027,C024,2026-01-06 02:00:00,1038.39,Branch,L018,M017,R08_HIGH_RISK_MERCHANT,High risk merchant,High,3,"Paid 1,038.39 to Shaw Ltd (M017), rated High risk"
+A00008,T027,C024,2026-01-06 02:00:00,1038.39,Branch,L018,M017,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 02:00, inside the unusual window 00:00 to 04:59"
+A00009,T027,C024,2026-01-06 02:00:00,1038.39,Branch,L018,M017,R09_CATEGORY_MISMATCH,Category mismatch at risky merchant,Medium,2,"Booked as Retail at Shaw Ltd, which is registered as Travel (High risk merchant)"
+A00010,T066,C027,2026-01-07 00:00:00,2736.35,ATM,L020,M021,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 00:00, inside the unusual window 00:00 to 04:59"
+A00011,T082,C011,2026-01-09 19:00:00,3135.33,Branch,L015,M009,R09_CATEGORY_MISMATCH,Category mismatch at risky merchant,Medium,2,"Booked as Healthcare at Walters-Rodriguez, which is registered as Utilities (Medium risk merchant)"
+A00012,T036,C058,2026-01-10 18:00:00,4051.57,Branch,L025,M028,R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,2,Customer prefers Digital but transacted at a Branch
+A00013,T057,C060,2026-01-10 18:00:00,488.04,Branch,L002,M043,R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,2,Customer prefers Digital but transacted at a Branch
+A00014,T018,C008,2026-01-11 03:00:00,2647.54,ATM,L032,M054,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 03:00, inside the unusual window 00:00 to 04:59"
+A00015,T070,C060,2026-01-12 02:00:00,4935.09,Digital,L058,M047,R01_HIGH_VALUE,High value transaction,High,3,"Amount 4,935.09 is at or above the P95 threshold of 4,747.43"
+A00016,T070,C060,2026-01-12 02:00:00,4935.09,Digital,L058,M047,R03_LOCATION_JUMP,Sudden location change,High,3,Moved from L002 to L058 within 32 h (home is L033)
+A00017,T070,C060,2026-01-12 02:00:00,4935.09,Digital,L058,M047,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 02:00, inside the unusual window 00:00 to 04:59"
+A00018,T070,C060,2026-01-12 02:00:00,4935.09,Digital,L058,M047,R04_MERCHANT_CHANGE,Sudden merchant change,Medium,2,"First ever Travel spend, at new merchant M047, after 2 earlier transactions"
+A00019,T070,C060,2026-01-12 02:00:00,4935.09,Digital,L058,M047,R05_BEHAVIOUR_CHANGE,Spending behaviour change,Medium,2,"Spent 4,935.09, which is 4.8x the customer's average of 1,022.94"
+A00020,T035,C024,2026-01-13 17:00:00,4829.88,Branch,L015,M021,R01_HIGH_VALUE,High value transaction,High,3,"Amount 4,829.88 is at or above the P95 threshold of 4,747.43"
+A00021,T069,C048,2026-01-15 16:00:00,419.03,Branch,L055,M008,R03_LOCATION_JUMP,Sudden location change,High,3,Moved from L016 to L055 within 34 h (home is L019)
+A00022,T069,C048,2026-01-15 16:00:00,419.03,Branch,L055,M008,R09_CATEGORY_MISMATCH,Category mismatch at risky merchant,Medium,2,"Booked as Healthcare at Gonzalez, Kim and Singh, which is registered as Retail (Medium risk merchant)"
+A00023,T039,C056,2026-01-16 08:00:00,3436.95,Digital,L046,M008,R09_CATEGORY_MISMATCH,Category mismatch at risky merchant,Medium,2,"Booked as Healthcare at Gonzalez, Kim and Singh, which is registered as Retail (Medium risk merchant)"
+A00024,T056,C010,2026-01-16 08:00:00,4613.28,ATM,L045,M048,R03_LOCATION_JUMP,Sudden location change,High,3,Moved from L058 to L045 within 0 h (home is L015)
+A00025,T077,C056,2026-01-16 08:00:00,3867.79,Branch,L052,M021,R03_LOCATION_JUMP,Sudden location change,High,3,Moved from L046 to L052 within 0 h (home is L017)
+A00026,T077,C056,2026-01-16 08:00:00,3867.79,Branch,L052,M021,R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,2,Customer prefers Digital but transacted at a Branch
+A00027,T021,C045,2026-01-19 02:00:00,3078.67,ATM,L018,M002,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 02:00, inside the unusual window 00:00 to 04:59"
+A00028,T089,C055,2026-01-21 11:00:00,4441.7,Branch,L043,M058,R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,2,Customer prefers Digital but transacted at a Branch
+A00029,T055,C048,2026-01-26 22:00:00,3009.6,ATM,L038,M048,R04_MERCHANT_CHANGE,Sudden merchant change,Medium,2,"First ever Utilities spend, at new merchant M048, after 2 earlier transactions"
+A00030,T055,C048,2026-01-26 22:00:00,3009.6,ATM,L038,M048,R05_BEHAVIOUR_CHANGE,Spending behaviour change,Medium,2,"Spent 3,009.60, which is 10.5x the customer's average of 285.46"
+A00031,T055,C048,2026-01-26 22:00:00,3009.6,ATM,L038,M048,R09_CATEGORY_MISMATCH,Category mismatch at risky merchant,Medium,2,"Booked as Utilities at Thompson Ltd, which is registered as Retail (Medium risk merchant)"
+A00032,T055,C048,2026-01-26 22:00:00,3009.6,ATM,L038,M048,R07_CHANNEL_CHANGE,Channel change,Low,1,Switched from Branch to ATM (preferred: Branch)
+A00033,T001,C054,2026-01-28 19:00:00,1903.97,Digital,L036,M015,R03_LOCATION_JUMP,Sudden location change,High,3,Moved from L016 to L036 within 154 h (home is L057)
+A00034,T001,C054,2026-01-28 19:00:00,1903.97,Digital,L036,M015,R07_CHANNEL_CHANGE,Channel change,Low,1,Switched from ATM to Digital (preferred: Branch)
+A00035,T008,C041,2026-01-29 20:00:00,4337.57,Branch,L029,M018,R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,2,Customer prefers Digital but transacted at a Branch
+A00036,T092,C013,2026-01-29 20:00:00,3580.56,Branch,L026,M037,R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,2,Customer prefers Digital but transacted at a Branch
+A00037,T007,C009,2026-01-30 16:00:00,337.51,ATM,L031,M022,R07_CHANNEL_CHANGE,Channel change,Low,1,Switched from Branch to ATM (preferred: Branch)
+A00038,T045,C016,2026-01-30 16:00:00,1330.96,ATM,L035,M003,R09_CATEGORY_MISMATCH,Category mismatch at risky merchant,Medium,2,"Booked as Utilities at Moore, Church and Jones, which is registered as Retail (Medium risk merchant)"
+A00039,T074,C027,2026-01-30 16:00:00,4086.53,ATM,L048,M020,R03_LOCATION_JUMP,Sudden location change,High,3,Moved from L058 to L048 within 119 h (home is L025)
+A00040,T074,C027,2026-01-30 16:00:00,4086.53,ATM,L048,M020,R04_MERCHANT_CHANGE,Sudden merchant change,Medium,2,"First ever Healthcare spend, at new merchant M020, after 2 earlier transactions"
+A00041,T081,C018,2026-01-30 16:00:00,4322.36,Branch,L032,M036,R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,2,Customer prefers Digital but transacted at a Branch
+A00042,T084,C045,2026-01-30 16:00:00,364.61,Branch,L028,M027,R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,2,Customer prefers Digital but transacted at a Branch
+A00043,T013,C036,2026-01-31 00:00:00,4170.59,Digital,L041,M023,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 00:00, inside the unusual window 00:00 to 04:59"
+A00044,T040,C003,2026-01-31 00:00:00,2228.75,ATM,L014,M025,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 00:00, inside the unusual window 00:00 to 04:59"
+A00045,T012,C029,2026-02-02 17:00:00,4851.05,Branch,L054,M018,R01_HIGH_VALUE,High value transaction,High,3,"Amount 4,851.05 is at or above the P95 threshold of 4,747.43"
+A00046,T012,C029,2026-02-02 17:00:00,4851.05,Branch,L054,M018,R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,2,Customer prefers Digital but transacted at a Branch
+A00047,T022,C058,2026-02-02 17:00:00,740.49,ATM,L029,M008,R09_CATEGORY_MISMATCH,Category mismatch at risky merchant,Medium,2,"Booked as Healthcare at Gonzalez, Kim and Singh, which is registered as Retail (Medium risk merchant)"
+A00048,T022,C058,2026-02-02 17:00:00,740.49,ATM,L029,M008,R07_CHANNEL_CHANGE,Channel change,Low,1,Switched from Branch to ATM (preferred: Digital)
+A00049,T073,C060,2026-02-03 09:00:00,77.33,Branch,L035,M033,R04_MERCHANT_CHANGE,Sudden merchant change,Medium,2,"First ever Utilities spend, at new merchant M033, after 3 earlier transactions"
+A00050,T073,C060,2026-02-03 09:00:00,77.33,Branch,L035,M033,R05_BEHAVIOUR_CHANGE,Spending behaviour change,Medium,2,"Spent 77.33, which is 0.0x the customer's average of 2,326.99"
+A00051,T073,C060,2026-02-03 09:00:00,77.33,Branch,L035,M033,R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,2,Customer prefers Digital but transacted at a Branch
+A00052,T073,C060,2026-02-03 09:00:00,77.33,Branch,L035,M033,R09_CATEGORY_MISMATCH,Category mismatch at risky merchant,Medium,2,"Booked as Utilities at Miller PLC, which is registered as Retail (Medium risk merchant)"
+A00053,T076,C043,2026-02-05 03:00:00,3658.59,ATM,L035,M027,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 03:00, inside the unusual window 00:00 to 04:59"
+A00054,T087,C056,2026-02-05 03:00:00,3661.55,Digital,L025,M044,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 03:00, inside the unusual window 00:00 to 04:59"
+A00055,T087,C056,2026-02-05 03:00:00,3661.55,Digital,L025,M044,R04_MERCHANT_CHANGE,Sudden merchant change,Medium,2,"First ever Retail spend, at new merchant M044, after 3 earlier transactions"
+A00056,T049,C050,2026-02-06 04:00:00,2756.22,Digital,L014,M034,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 04:00, inside the unusual window 00:00 to 04:59"
+A00057,T003,C003,2026-02-07 08:00:00,3673.37,Branch,L058,M002,R04_MERCHANT_CHANGE,Sudden merchant change,Medium,2,"First ever Retail spend, at new merchant M002, after 2 earlier transactions"
+A00058,T003,C003,2026-02-07 08:00:00,3673.37,Branch,L058,M002,R05_BEHAVIOUR_CHANGE,Spending behaviour change,Medium,2,"Spent 3,673.37, which is 2.8x the customer's average of 1,300.38"
+A00059,T004,C001,2026-02-08 03:00:00,3013.36,Branch,L011,M043,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 03:00, inside the unusual window 00:00 to 04:59"
+A00060,T004,C001,2026-02-08 03:00:00,3013.36,Branch,L011,M043,R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,2,Customer prefers Digital but transacted at a Branch
+A00061,T088,C003,2026-02-08 03:00:00,3205.91,Branch,L022,M048,R03_LOCATION_JUMP,Sudden location change,High,3,Moved from L058 to L022 within 19 h (home is L048)
+A00062,T088,C003,2026-02-08 03:00:00,3205.91,Branch,L022,M048,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 03:00, inside the unusual window 00:00 to 04:59"
+A00063,T088,C003,2026-02-08 03:00:00,3205.91,Branch,L022,M048,R04_MERCHANT_CHANGE,Sudden merchant change,Medium,2,"First ever Healthcare spend, at new merchant M048, after 3 earlier transactions"
+A00064,T088,C003,2026-02-08 03:00:00,3205.91,Branch,L022,M048,R09_CATEGORY_MISMATCH,Category mismatch at risky merchant,Medium,2,"Booked as Healthcare at Thompson Ltd, which is registered as Retail (Medium risk merchant)"
+A00065,T025,C003,2026-02-09 03:00:00,2307.55,ATM,L019,M012,R03_LOCATION_JUMP,Sudden location change,High,3,Moved from L022 to L019 within 24 h (home is L048)
+A00066,T025,C003,2026-02-09 03:00:00,2307.55,ATM,L019,M012,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 03:00, inside the unusual window 00:00 to 04:59"
+A00067,T025,C003,2026-02-09 03:00:00,2307.55,ATM,L019,M012,R07_CHANNEL_CHANGE,Channel change,Low,1,Switched from Branch to ATM (preferred: Branch)
+A00068,T041,C058,2026-02-09 03:00:00,654.09,Digital,L005,M058,R03_LOCATION_JUMP,Sudden location change,High,3,Moved from L029 to L005 within 154 h (home is L049)
+A00069,T041,C058,2026-02-09 03:00:00,654.09,Digital,L005,M058,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 03:00, inside the unusual window 00:00 to 04:59"
+A00070,T041,C058,2026-02-09 03:00:00,654.09,Digital,L005,M058,R04_MERCHANT_CHANGE,Sudden merchant change,Medium,2,"First ever Utilities spend, at new merchant M058, after 2 earlier transactions"
+A00071,T093,C053,2026-02-09 03:00:00,3815.89,Branch,L047,M020,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 03:00, inside the unusual window 00:00 to 04:59"
+A00072,T093,C053,2026-02-09 03:00:00,3815.89,Branch,L047,M020,R07_CHANNEL_CHANGE,Channel change,Low,1,Switched from Digital to Branch (preferred: ATM)
+A00073,T024,C035,2026-02-10 23:00:00,1863.49,Branch,L046,M017,R08_HIGH_RISK_MERCHANT,High risk merchant,High,3,"Paid 1,863.49 to Shaw Ltd (M017), rated High risk"
+A00074,T024,C035,2026-02-10 23:00:00,1863.49,Branch,L046,M017,R09_CATEGORY_MISMATCH,Category mismatch at risky merchant,Medium,2,"Booked as Retail at Shaw Ltd, which is registered as Travel (High risk merchant)"
+A00075,T058,C060,2026-02-11 17:00:00,1020.12,Digital,L055,M013,R09_CATEGORY_MISMATCH,Category mismatch at risky merchant,Medium,2,"Booked as Utilities at Miles Inc, which is registered as Healthcare (Medium risk merchant)"
+A00076,T019,C005,2026-02-12 04:00:00,2188.13,Digital,L041,M035,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 04:00, inside the unusual window 00:00 to 04:59"
+A00077,T023,C010,2026-02-12 04:00:00,1496.12,Branch,L005,M057,R08_HIGH_RISK_MERCHANT,High risk merchant,High,3,"Paid 1,496.12 to Blake-Miller (M057), rated High risk"
+A00078,T023,C010,2026-02-12 04:00:00,1496.12,Branch,L005,M057,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 04:00, inside the unusual window 00:00 to 04:59"
+A00079,T023,C010,2026-02-12 04:00:00,1496.12,Branch,L005,M057,R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,2,Customer prefers Digital but transacted at a Branch
+A00080,T085,C007,2026-02-12 04:00:00,1589.36,Branch,L032,M043,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 04:00, inside the unusual window 00:00 to 04:59"
+A00081,T085,C007,2026-02-12 04:00:00,1589.36,Branch,L032,M043,R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,2,Customer prefers Digital but transacted at a Branch
+A00082,T052,C056,2026-02-14 09:00:00,3886.91,Branch,L025,M035,R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,2,Customer prefers Digital but transacted at a Branch
+A00083,T059,C016,2026-02-14 09:00:00,273.88,Digital,L057,M024,R04_MERCHANT_CHANGE,Sudden merchant change,Medium,2,"First ever Healthcare spend, at new merchant M024, after 2 earlier transactions"
+A00084,T059,C016,2026-02-14 09:00:00,273.88,Digital,L057,M024,R07_CHANNEL_CHANGE,Channel change,Low,1,Switched from ATM to Digital (preferred: Branch)
+A00085,T072,C051,2026-02-14 09:00:00,1033.64,ATM,L027,M020,R07_CHANNEL_CHANGE,Channel change,Low,1,Switched from Digital to ATM (preferred: Branch)
+A00086,T051,C057,2026-02-15 19:00:00,4849.44,Branch,L027,M052,R01_HIGH_VALUE,High value transaction,High,3,"Amount 4,849.44 is at or above the P95 threshold of 4,747.43"
+A00087,T051,C057,2026-02-15 19:00:00,4849.44,Branch,L027,M052,R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,2,Customer prefers Digital but transacted at a Branch
+A00088,T017,C001,2026-02-17 22:00:00,1556.0,Branch,L034,M044,R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,2,Customer prefers Digital but transacted at a Branch
+A00089,T029,C036,2026-02-18 10:00:00,2982.45,ATM,L021,M007,R04_MERCHANT_CHANGE,Sudden merchant change,Medium,2,"First ever Retail spend, at new merchant M007, after 2 earlier transactions"
+A00090,T029,C036,2026-02-18 10:00:00,2982.45,ATM,L021,M007,R07_CHANNEL_CHANGE,Channel change,Low,1,Switched from Digital to ATM (preferred: Digital)
+A00091,T090,C031,2026-02-18 10:00:00,2387.46,Digital,L044,M012,R09_CATEGORY_MISMATCH,Category mismatch at risky merchant,Medium,2,"Booked as Travel at Davenport, Norton and Carr, which is registered as Utilities (Medium risk merchant)"
+A00092,T043,C014,2026-02-19 06:00:00,220.22,Digital,L027,M013,R09_CATEGORY_MISMATCH,Category mismatch at risky merchant,Medium,2,"Booked as Retail at Miles Inc, which is registered as Healthcare (Medium risk merchant)"
+A00093,T064,C012,2026-02-19 06:00:00,1815.93,Branch,L001,M022,R07_CHANNEL_CHANGE,Channel change,Low,1,Switched from Digital to Branch (preferred: ATM)
+A00094,T002,C018,2026-02-20 21:00:00,4756.04,ATM,L029,M015,R01_HIGH_VALUE,High value transaction,High,3,"Amount 4,756.04 is at or above the P95 threshold of 4,747.43"
+A00095,T002,C018,2026-02-20 21:00:00,4756.04,ATM,L029,M015,R07_CHANNEL_CHANGE,Channel change,Low,1,Switched from Branch to ATM (preferred: Digital)
+A00096,T016,C036,2026-02-20 21:00:00,957.85,Digital,L050,M026,R03_LOCATION_JUMP,Sudden location change,High,3,Moved from L021 to L050 within 59 h (home is L044)
+A00097,T016,C036,2026-02-20 21:00:00,957.85,Digital,L050,M026,R04_MERCHANT_CHANGE,Sudden merchant change,Medium,2,"First ever Utilities spend, at new merchant M026, after 3 earlier transactions"
+A00098,T083,C051,2026-02-21 20:00:00,1687.95,Branch,L018,M013,R05_BEHAVIOUR_CHANGE,Spending behaviour change,Medium,2,"Spent 1,687.95, which is 2.2x the customer's average of 783.56"
+A00099,T083,C051,2026-02-21 20:00:00,1687.95,Branch,L018,M013,R09_CATEGORY_MISMATCH,Category mismatch at risky merchant,Medium,2,"Booked as Travel at Miles Inc, which is registered as Healthcare (Medium risk merchant)"
+A00100,T099,C051,2026-02-23 16:00:00,175.82,Digital,L040,M019,R03_LOCATION_JUMP,Sudden location change,High,3,Moved from L018 to L040 within 44 h (home is L030)
+A00101,T099,C051,2026-02-23 16:00:00,175.82,Digital,L040,M019,R05_BEHAVIOUR_CHANGE,Spending behaviour change,Medium,2,"Spent 175.82, which is 0.2x the customer's average of 1,085.02"
+A00102,T099,C051,2026-02-23 16:00:00,175.82,Digital,L040,M019,R07_CHANNEL_CHANGE,Channel change,Low,1,Switched from Branch to Digital (preferred: Branch)
+A00103,T042,C023,2026-02-24 15:00:00,2501.13,Branch,L027,M037,R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,2,Customer prefers Digital but transacted at a Branch
+A00104,T079,C052,2026-02-24 15:00:00,1824.41,Digital,L058,M045,R03_LOCATION_JUMP,Sudden location change,High,3,Moved from L025 to L058 within 149 h (home is L001)
+A00105,T079,C052,2026-02-24 15:00:00,1824.41,Digital,L058,M045,R04_MERCHANT_CHANGE,Sudden merchant change,Medium,2,"First ever Travel spend, at new merchant M045, after 2 earlier transactions"
+A00106,T079,C052,2026-02-24 15:00:00,1824.41,Digital,L058,M045,R07_CHANNEL_CHANGE,Channel change,Low,1,Switched from Branch to Digital (preferred: Branch)
+A00107,T063,C052,2026-02-25 08:00:00,4152.25,Digital,L031,M059,R03_LOCATION_JUMP,Sudden location change,High,3,Moved from L058 to L031 within 17 h (home is L001)
+A00108,T063,C052,2026-02-25 08:00:00,4152.25,Digital,L031,M059,R04_MERCHANT_CHANGE,Sudden merchant change,Medium,2,"First ever Retail spend, at new merchant M059, after 3 earlier transactions"
+A00109,T063,C052,2026-02-25 08:00:00,4152.25,Digital,L031,M059,R09_CATEGORY_MISMATCH,Category mismatch at risky merchant,Medium,2,"Booked as Retail at Hanson-Thompson, which is registered as Healthcare (Medium risk merchant)"
+A00110,T047,C007,2026-02-26 01:00:00,1592.97,Digital,L027,M028,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 01:00, inside the unusual window 00:00 to 04:59"
+A00111,T065,C057,2026-02-26 01:00:00,1440.63,Digital,L023,M040,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 01:00, inside the unusual window 00:00 to 04:59"
+A00112,T065,C057,2026-02-26 01:00:00,1440.63,Digital,L023,M040,R04_MERCHANT_CHANGE,Sudden merchant change,Medium,2,"First ever Healthcare spend, at new merchant M040, after 2 earlier transactions"
+A00113,T065,C057,2026-02-26 01:00:00,1440.63,Digital,L023,M040,R09_CATEGORY_MISMATCH,Category mismatch at risky merchant,Medium,2,"Booked as Healthcare at Cardenas, Roberts and Sandoval, which is registered as Travel (Medium risk merchant)"
+A00114,T015,C028,2026-02-27 02:00:00,950.03,Branch,L050,M033,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 02:00, inside the unusual window 00:00 to 04:59"
+A00115,T015,C028,2026-02-27 02:00:00,950.03,Branch,L050,M033,R09_CATEGORY_MISMATCH,Category mismatch at risky merchant,Medium,2,"Booked as Utilities at Miller PLC, which is registered as Retail (Medium risk merchant)"
+A00116,T061,C011,2026-02-27 02:00:00,1973.95,Digital,L037,M005,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 02:00, inside the unusual window 00:00 to 04:59"
+A00117,T061,C011,2026-02-27 02:00:00,1973.95,Digital,L037,M005,R07_CHANNEL_CHANGE,Channel change,Low,1,Switched from ATM to Digital (preferred: ATM)
+A00118,T091,C015,2026-02-27 02:00:00,641.99,Digital,L052,M040,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 02:00, inside the unusual window 00:00 to 04:59"
+A00119,T091,C015,2026-02-27 02:00:00,641.99,Digital,L052,M040,R09_CATEGORY_MISMATCH,Category mismatch at risky merchant,Medium,2,"Booked as Healthcare at Cardenas, Roberts and Sandoval, which is registered as Travel (Medium risk merchant)"
+A00120,T096,C023,2026-02-27 02:00:00,2494.29,ATM,L030,M054,R03_LOCATION_JUMP,Sudden location change,High,3,Moved from L027 to L030 within 59 h (home is L044)
+A00121,T096,C023,2026-02-27 02:00:00,2494.29,ATM,L030,M054,R02_ODD_HOUR,Unusual transaction time,Medium,2,"Transaction at 02:00, inside the unusual window 00:00 to 04:59"
+A00122,T096,C023,2026-02-27 02:00:00,2494.29,ATM,L030,M054,R07_CHANNEL_CHANGE,Channel change,Low,1,Switched from Branch to ATM (preferred: Digital)
+A00123,T078,C048,2026-02-28 20:00:00,416.52,Digital,L039,M026,R07_CHANNEL_CHANGE,Channel change,Low,1,Switched from ATM to Digital (preferred: Branch)
+A00124,T100,C056,2026-02-28 20:00:00,584.06,Digital,L035,M014,R05_BEHAVIOUR_CHANGE,Spending behaviour change,Medium,2,"Spent 584.06, which is 0.2x the customer's average of 3,302.72"

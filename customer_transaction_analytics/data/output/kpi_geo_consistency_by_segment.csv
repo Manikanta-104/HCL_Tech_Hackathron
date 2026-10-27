@@ -1,0 +1,4 @@
+segment,customers_with_history,geo_consistency_index,avg_locations_per_customer
+Premium,7,0.4286,2.43
+Standard,10,0.3617,3.3
+Student,11,0.4045,2.73

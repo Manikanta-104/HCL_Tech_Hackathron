@@ -1,0 +1,10 @@
+rule_code,rule_name,severity,alerts,customers_affected,value_at_risk
+R02_ODD_HOUR,Unusual transaction time,Medium,25,21,59767.59
+R06_DIGITAL_TO_BRANCH,Digital to branch shift,Medium,20,14,53984.71
+R09_CATEGORY_MISMATCH,Category mismatch at risky merchant,Medium,19,16,31291.61
+R07_CHANNEL_CHANGE,Channel change,Low,16,14,29861.94
+R03_LOCATION_JUMP,Sudden location change,High,14,12,35597.86
+R04_MERCHANT_CHANGE,Sudden merchant change,Medium,14,10,34934.94
+R05_BEHAVIOUR_CHANGE,Spending behaviour change,Medium,7,5,14143.22
+R01_HIGH_VALUE,High value transaction,High,5,5,24221.5
+R08_HIGH_RISK_MERCHANT,High risk merchant,High,4,4,8949.14

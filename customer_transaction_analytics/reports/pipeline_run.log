@@ -1,0 +1,59 @@
+2026-10-27 07:09:12 | INFO    | cta.main | ======================================================================
+2026-10-27 07:09:12 | INFO    | cta.main | Pipeline run RUN_20261027_070912_8e6f79 started
+2026-10-27 07:09:12 | INFO    | cta.main | Starting stage: 1. Data ingestion
+2026-10-27 07:09:12 | INFO    | cta.ingestion.data_loader | Found 4 CSV file(s) in /home/claude/customer_transaction_analytics/data/raw
+2026-10-27 07:09:12 | INFO    | cta.ingestion.data_loader | File Customers.csv        -> table 'customers' (60 rows, 5 cols, valid=True)
+2026-10-27 07:09:12 | INFO    | cta.ingestion.data_loader | File Merchants.csv        -> table 'merchants' (60 rows, 4 cols, valid=True)
+2026-10-27 07:09:12 | INFO    | cta.ingestion.data_loader | File Time.csv             -> table 'time' (60 rows, 6 cols, valid=True)
+2026-10-27 07:09:12 | INFO    | cta.ingestion.data_loader | File Transactions.csv     -> table 'transactions' (100 rows, 8 cols, valid=True)
+2026-10-27 07:09:12 | INFO    | cta.ingestion.relationship_detector | Detected relationship: transactions.CustomerID -> customers.CustomerID [foreign_key, match=100%]
+2026-10-27 07:09:12 | INFO    | cta.ingestion.relationship_detector | Detected relationship: transactions.MerchantID -> merchants.MerchantID [foreign_key, match=100%]
+2026-10-27 07:09:12 | INFO    | cta.ingestion.relationship_detector | Detected relationship: transactions.TimeID -> time.TimeID [foreign_key, match=100%]
+2026-10-27 07:09:12 | INFO    | cta.ingestion.relationship_detector | Detected relationship: transactions.LocationID <-> customers.HomeLocationID [shared_domain, match=56%]
+2026-10-27 07:09:12 | INFO    | cta.main | Finished stage: 1. Data ingestion in 0.068 s
+2026-10-27 07:09:12 | INFO    | cta.main | Starting stage: 2. Data cleaning and validation
+2026-10-27 07:09:12 | INFO    | cta.preprocessing.data_cleaner | Cleaning complete. customers=60, merchants=60, time=60, transactions=100, rejected=0
+2026-10-27 07:09:12 | INFO    | cta.preprocessing.cleaning_report | Cleaning report written to /home/claude/customer_transaction_analytics/reports/cleaning_report.md
+2026-10-27 07:09:12 | INFO    | cta.main | Finished stage: 2. Data cleaning and validation in 0.115 s
+2026-10-27 07:09:12 | INFO    | cta.main | Starting stage: 3. Merge source tables
+2026-10-27 07:09:12 | INFO    | cta.ingestion.data_merger | Fact table identified: 'transactions' (100 rows)
+2026-10-27 07:09:12 | INFO    | cta.ingestion.data_merger | Joined 'customers' on CustomerID
+2026-10-27 07:09:12 | INFO    | cta.ingestion.data_merger | Joined 'merchants' on MerchantID
+2026-10-27 07:09:12 | INFO    | cta.ingestion.data_merger | Joined 'time' on TimeID
+2026-10-27 07:09:12 | INFO    | cta.main | Finished stage: 3. Merge source tables in 0.017 s
+2026-10-27 07:09:12 | INFO    | cta.main | Starting stage: 4. Feature engineering
+2026-10-27 07:09:12 | INFO    | cta.features.feature_engineering | Transaction features built: 100 rows x 57 columns
+2026-10-27 07:09:12 | INFO    | cta.features.feature_engineering | Customer features built: 60 customers (47 active)
+2026-10-27 07:09:13 | INFO    | cta.main | Finished stage: 4. Feature engineering in 0.172 s
+2026-10-27 07:09:13 | INFO    | cta.main | Starting stage: 5. Rule based anomaly detection
+2026-10-27 07:09:13 | INFO    | cta.anomaly.anomaly_detector | Rule R01_HIGH_VALUE         fired on   5 transaction(s)
+2026-10-27 07:09:13 | INFO    | cta.anomaly.anomaly_detector | Rule R02_ODD_HOUR           fired on  25 transaction(s)
+2026-10-27 07:09:13 | INFO    | cta.anomaly.anomaly_detector | Rule R03_LOCATION_JUMP      fired on  14 transaction(s)
+2026-10-27 07:09:13 | INFO    | cta.anomaly.anomaly_detector | Rule R04_MERCHANT_CHANGE    fired on  14 transaction(s)
+2026-10-27 07:09:13 | INFO    | cta.anomaly.anomaly_detector | Rule R05_BEHAVIOUR_CHANGE   fired on   7 transaction(s)
+2026-10-27 07:09:13 | INFO    | cta.anomaly.anomaly_detector | Rule R06_DIGITAL_TO_BRANCH  fired on  20 transaction(s)
+2026-10-27 07:09:13 | INFO    | cta.anomaly.anomaly_detector | Rule R07_CHANNEL_CHANGE     fired on  16 transaction(s)
+2026-10-27 07:09:13 | INFO    | cta.anomaly.anomaly_detector | Rule R08_HIGH_RISK_MERCHANT fired on   4 transaction(s)
+2026-10-27 07:09:13 | INFO    | cta.anomaly.anomaly_detector | Rule R09_CATEGORY_MISMATCH  fired on  19 transaction(s)
+2026-10-27 07:09:13 | INFO    | cta.anomaly.anomaly_detector | Anomaly detection complete: 124 alerts on 71 of 100 transactions (High risk: 20)
+2026-10-27 07:09:13 | INFO    | cta.main | Finished stage: 5. Rule based anomaly detection in 0.073 s
+2026-10-27 07:09:13 | INFO    | cta.main | Starting stage: 6. Load curated data into SQLite
+2026-10-27 07:09:13 | INFO    | cta.database.db_manager | Executed SQL script schema.sql
+2026-10-27 07:09:13 | INFO    | cta.database.db_loader | Loaded dim_location          55 rows
+2026-10-27 07:09:13 | INFO    | cta.database.db_loader | Loaded dim_customer          60 rows
+2026-10-27 07:09:13 | INFO    | cta.database.db_loader | Loaded dim_time              60 rows
+2026-10-27 07:09:13 | INFO    | cta.database.db_loader | Loaded dim_merchant          60 rows
+2026-10-27 07:09:13 | INFO    | cta.database.db_loader | Loaded fact_transaction     100 rows
+2026-10-27 07:09:13 | INFO    | cta.database.db_loader | Loaded anomaly_rule           9 rows
+2026-10-27 07:09:13 | INFO    | cta.database.db_loader | Loaded anomaly_alert        124 rows
+2026-10-27 07:09:13 | INFO    | cta.database.db_loader | Loaded transaction_risk     100 rows
+2026-10-27 07:09:13 | INFO    | cta.database.db_manager | Executed SQL script views.sql
+2026-10-27 07:09:13 | INFO    | cta.database.db_loader | SQLite database ready at /home/claude/customer_transaction_analytics/data/output/customer_analytics.db
+2026-10-27 07:09:13 | INFO    | cta.main | Finished stage: 6. Load curated data into SQLite in 0.108 s
+2026-10-27 07:09:13 | INFO    | cta.main | Starting stage: 7. KPI engine
+2026-10-27 07:09:13 | INFO    | cta.kpi.kpi_engine | Exported 29 KPI result sets to /home/claude/customer_transaction_analytics/data/output
+2026-10-27 07:09:13 | INFO    | cta.kpi.kpi_engine | KPI report written to /home/claude/customer_transaction_analytics/reports/kpi_report.md
+2026-10-27 07:09:13 | INFO    | cta.kpi.kpi_engine | Anomaly report written to /home/claude/customer_transaction_analytics/reports/anomaly_report.md
+2026-10-27 07:09:13 | INFO    | cta.main | Finished stage: 7. KPI engine in 0.085 s
+2026-10-27 07:09:13 | INFO    | cta.main | Pipeline run RUN_20261027_070912_8e6f79 finished in 0.64 s
+2026-10-27 07:09:13 | INFO    | cta.main | ======================================================================

@@ -1,0 +1,10 @@
+segment,channel,transactions,share_within_segment_pct
+Premium,ATM,8,32.0
+Premium,Branch,12,48.0
+Premium,Digital,5,20.0
+Standard,ATM,13,30.95
+Standard,Branch,15,35.71
+Standard,Digital,14,33.33
+Student,ATM,10,30.3
+Student,Branch,10,30.3
+Student,Digital,13,39.39

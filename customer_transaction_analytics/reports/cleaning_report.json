@@ -1,0 +1,365 @@
+{
+  "generated_at": "2026-10-27 07:09:12",
+  "row_counts": {
+    "customers": {
+      "rows_in": 60,
+      "rows_out": 60,
+      "rows_rejected": 0
+    },
+    "merchants": {
+      "rows_in": 60,
+      "rows_out": 60,
+      "rows_rejected": 0
+    },
+    "time": {
+      "rows_in": 60,
+      "rows_out": 60,
+      "rows_rejected": 0
+    },
+    "transactions": {
+      "rows_in": 100,
+      "rows_out": 100,
+      "rows_rejected": 0
+    }
+  },
+  "steps": [
+    {
+      "table": "customers",
+      "check": "Whitespace and null token standardisation",
+      "rows_affected": 0,
+      "action": "cells trimmed or set to null"
+    },
+    {
+      "table": "customers",
+      "check": "Exact duplicate rows",
+      "rows_affected": 0,
+      "action": "removed (first copy kept)"
+    },
+    {
+      "table": "customers",
+      "check": "Null check on required column CustomerID",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "customers",
+      "check": "ID format check on CustomerID",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "customers",
+      "check": "ID format check on HomeLocationID",
+      "rows_affected": 0,
+      "action": "set to null"
+    },
+    {
+      "table": "customers",
+      "check": "Duplicate primary key (CustomerID)",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "customers",
+      "check": "Missing CustomerName",
+      "rows_affected": 0,
+      "action": "filled with 'Unknown Customer'"
+    },
+    {
+      "table": "customers",
+      "check": "Missing Segment",
+      "rows_affected": 0,
+      "action": "filled with 'Unknown'"
+    },
+    {
+      "table": "customers",
+      "check": "Invalid Segment value",
+      "rows_affected": 0,
+      "action": "replaced with 'Unknown'"
+    },
+    {
+      "table": "customers",
+      "check": "Missing PreferredChannel",
+      "rows_affected": 0,
+      "action": "filled with 'Unknown'"
+    },
+    {
+      "table": "customers",
+      "check": "Invalid PreferredChannel value",
+      "rows_affected": 0,
+      "action": "replaced with 'Unknown'"
+    },
+    {
+      "table": "customers",
+      "check": "Missing HomeLocationID",
+      "rows_affected": 0,
+      "action": "filled with 'Unknown'"
+    },
+    {
+      "table": "merchants",
+      "check": "Whitespace and null token standardisation",
+      "rows_affected": 0,
+      "action": "cells trimmed or set to null"
+    },
+    {
+      "table": "merchants",
+      "check": "Exact duplicate rows",
+      "rows_affected": 0,
+      "action": "removed (first copy kept)"
+    },
+    {
+      "table": "merchants",
+      "check": "Null check on required column MerchantID",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "merchants",
+      "check": "ID format check on MerchantID",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "merchants",
+      "check": "Duplicate primary key (MerchantID)",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "merchants",
+      "check": "Missing MerchantName",
+      "rows_affected": 0,
+      "action": "filled with 'Unknown Merchant'"
+    },
+    {
+      "table": "merchants",
+      "check": "Missing MerchantCategory",
+      "rows_affected": 0,
+      "action": "filled with 'Uncategorized'"
+    },
+    {
+      "table": "merchants",
+      "check": "Missing merchant RiskLevel",
+      "rows_affected": 0,
+      "action": "filled with 'Unknown'"
+    },
+    {
+      "table": "merchants",
+      "check": "Invalid merchant RiskLevel value",
+      "rows_affected": 0,
+      "action": "replaced with 'Unknown'"
+    },
+    {
+      "table": "time",
+      "check": "Whitespace and null token standardisation",
+      "rows_affected": 0,
+      "action": "cells trimmed or set to null"
+    },
+    {
+      "table": "time",
+      "check": "Exact duplicate rows",
+      "rows_affected": 0,
+      "action": "removed (first copy kept)"
+    },
+    {
+      "table": "time",
+      "check": "Null check on required column TimeID",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "time",
+      "check": "Null check on required column Date",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "time",
+      "check": "Null check on required column HourOfDay",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "time",
+      "check": "ID format check on TimeID",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "time",
+      "check": "Duplicate primary key (TimeID)",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "time",
+      "check": "Date conversion",
+      "rows_affected": 0,
+      "action": "unparseable dates quarantined"
+    },
+    {
+      "table": "time",
+      "check": "HourOfDay range check (0-23)",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "time",
+      "check": "DayOfWeek consistency with Date",
+      "rows_affected": 0,
+      "action": "re-derived from Date"
+    },
+    {
+      "table": "time",
+      "check": "Month consistency with Date",
+      "rows_affected": 0,
+      "action": "re-derived from Date"
+    },
+    {
+      "table": "time",
+      "check": "Year consistency with Date",
+      "rows_affected": 0,
+      "action": "re-derived from Date"
+    },
+    {
+      "table": "transactions",
+      "check": "Whitespace and null token standardisation",
+      "rows_affected": 0,
+      "action": "cells trimmed or set to null"
+    },
+    {
+      "table": "transactions",
+      "check": "Exact duplicate rows",
+      "rows_affected": 0,
+      "action": "removed (first copy kept)"
+    },
+    {
+      "table": "transactions",
+      "check": "Null check on required column TransactionID",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "transactions",
+      "check": "Null check on required column CustomerID",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "transactions",
+      "check": "Null check on required column TimeID",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "transactions",
+      "check": "Null check on required column Amount",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "transactions",
+      "check": "ID format check on TransactionID",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "transactions",
+      "check": "ID format check on CustomerID",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "transactions",
+      "check": "ID format check on MerchantID",
+      "rows_affected": 0,
+      "action": "set to null"
+    },
+    {
+      "table": "transactions",
+      "check": "ID format check on TimeID",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "transactions",
+      "check": "ID format check on LocationID",
+      "rows_affected": 0,
+      "action": "set to null"
+    },
+    {
+      "table": "transactions",
+      "check": "Duplicate primary key (TransactionID)",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "transactions",
+      "check": "Amount data type check",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "transactions",
+      "check": "Amount must be positive",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "transactions",
+      "check": "Amount above 10,000,000",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "transactions",
+      "check": "Missing Category",
+      "rows_affected": 0,
+      "action": "filled with 'Uncategorized'"
+    },
+    {
+      "table": "transactions",
+      "check": "Missing Channel",
+      "rows_affected": 0,
+      "action": "filled with 'Unknown'"
+    },
+    {
+      "table": "transactions",
+      "check": "Invalid Channel value",
+      "rows_affected": 0,
+      "action": "replaced with 'Unknown'"
+    },
+    {
+      "table": "transactions",
+      "check": "Missing MerchantID",
+      "rows_affected": 0,
+      "action": "filled with 'Unknown'"
+    },
+    {
+      "table": "transactions",
+      "check": "Missing LocationID",
+      "rows_affected": 0,
+      "action": "filled with 'Unknown'"
+    },
+    {
+      "table": "transactions",
+      "check": "Referential integrity: CustomerID",
+      "rows_affected": 0,
+      "action": "quarantined"
+    },
+    {
+      "table": "transactions",
+      "check": "Referential integrity: MerchantID",
+      "rows_affected": 0,
+      "action": "kept, merchant marked as unregistered"
+    },
+    {
+      "table": "transactions",
+      "check": "Referential integrity: TimeID",
+      "rows_affected": 0,
+      "action": "quarantined"
+    }
+  ],
+  "rejected_record_count": 0,
+  "rejected_by_reason": {}
+}

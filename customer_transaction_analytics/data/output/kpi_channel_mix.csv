@@ -1,0 +1,4 @@
+channel,transactions,total_value,avg_value,txn_share_pct,value_share_pct
+Branch,37,93258.86,2520.51,37.0,39.23
+Digital,32,64546.53,2017.08,32.0,27.15
+ATM,31,79934.09,2578.52,31.0,33.62

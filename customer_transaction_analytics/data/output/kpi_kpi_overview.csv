@@ -1,0 +1,2 @@
+total_transactions,active_customers,active_merchants,total_value,avg_transaction_value,digital_share_pct,repeat_merchant_ratio_pct,flagged_transactions,high_risk_transactions,high_risk_merchant_share_pct,category_mismatch_pct,first_date,last_date
+100,47,48,237739.48,2377.39,32.0,3.0,71,20,4.0,81.0,2026-01-01,2026-02-28

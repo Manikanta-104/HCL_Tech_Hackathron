@@ -1,0 +1,11 @@
+customer_id,customer_name,segment,transactions,alerts,total_risk_score,max_risk_score,high_risk_txns
+C060,Maria Taylor,Student,5,12,26,12,2
+C003,Brittney Gallagher,Standard,5,10,21,9,2
+C056,Sherry Chapman,Standard,6,8,17,5,1
+C057,Patrick Phillips,Premium,3,7,15,6,2
+C048,Ronnie Mcgee,Standard,4,7,13,7,2
+C052,Joyce Wilson,Standard,4,6,13,7,2
+C051,George Watkins,Standard,4,7,13,6,1
+C058,Erik Rios,Premium,3,6,12,7,1
+C010,Michele Diaz,Student,3,4,10,7,1
+C024,Andrew Cook,Premium,2,4,10,7,1

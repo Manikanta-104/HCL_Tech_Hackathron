@@ -1,0 +1,111 @@
+{
+  "run": {
+    "run_id": "RUN_20261027_070912_8e6f79",
+    "started_at": "2026-10-27 07:09:12",
+    "finished_at": "2026-10-27 07:09:13",
+    "status": "SUCCESS",
+    "raw_rows": 280,
+    "clean_transactions": 100,
+    "rejected_records": 0,
+    "alerts_generated": 124,
+    "duration_seconds": 0.639,
+    "detected_relationships": "transactions.CustomerID -> customers.CustomerID [foreign_key, match=100%] ; transactions.MerchantID -> merchants.MerchantID [foreign_key, match=100%] ; transactions.TimeID -> time.TimeID [foreign_key, match=100%] ; transactions.LocationID <-> customers.HomeLocationID [shared_domain, match=56%]"
+  },
+  "stage_seconds": {
+    "ingestion": 0.068,
+    "cleaning": 0.115,
+    "merge": 0.017,
+    "features": 0.172,
+    "anomaly": 0.073,
+    "database": 0.108,
+    "kpi": 0.085
+  },
+  "schema_validation": [
+    {
+      "table": "customers",
+      "file": "Customers.csv",
+      "rows": 60,
+      "columns": 5,
+      "missing_columns": [],
+      "extra_columns": [],
+      "type_issues": {},
+      "pattern_issues": {},
+      "is_valid": true
+    },
+    {
+      "table": "merchants",
+      "file": "Merchants.csv",
+      "rows": 60,
+      "columns": 4,
+      "missing_columns": [],
+      "extra_columns": [],
+      "type_issues": {},
+      "pattern_issues": {},
+      "is_valid": true
+    },
+    {
+      "table": "time",
+      "file": "Time.csv",
+      "rows": 60,
+      "columns": 6,
+      "missing_columns": [],
+      "extra_columns": [],
+      "type_issues": {},
+      "pattern_issues": {},
+      "is_valid": true
+    },
+    {
+      "table": "transactions",
+      "file": "Transactions.csv",
+      "rows": 100,
+      "columns": 8,
+      "missing_columns": [],
+      "extra_columns": [],
+      "type_issues": {},
+      "pattern_issues": {},
+      "is_valid": true
+    }
+  ],
+  "table_counts": [
+    {
+      "table": "anomaly_alert",
+      "rows": 124
+    },
+    {
+      "table": "anomaly_rule",
+      "rows": 9
+    },
+    {
+      "table": "data_quality_log",
+      "rows": 0
+    },
+    {
+      "table": "dim_customer",
+      "rows": 60
+    },
+    {
+      "table": "dim_location",
+      "rows": 55
+    },
+    {
+      "table": "dim_merchant",
+      "rows": 60
+    },
+    {
+      "table": "dim_time",
+      "rows": 60
+    },
+    {
+      "table": "fact_transaction",
+      "rows": 100
+    },
+    {
+      "table": "pipeline_run",
+      "rows": 0
+    },
+    {
+      "table": "transaction_risk",
+      "rows": 100
+    }
+  ]
+}

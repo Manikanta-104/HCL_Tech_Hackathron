@@ -1,0 +1,11 @@
+merchant_id,merchant_name,merchant_category,merchant_risk_level,transactions,unique_customers,repeat_visits,total_value,avg_value
+M043,Sweeney-Hebert,Travel,Low,6,5,1,10780.45,1796.74
+M020,Lester Inc,Travel,Low,4,3,1,11102.39,2775.6
+M028,"Yoder, Diaz and Barber",Retail,Low,4,4,0,10362.28,2590.57
+M026,"Mcintyre, Perez and Weaver",Healthcare,Low,4,4,0,5024.86,1256.22
+M013,Miles Inc,Healthcare,Medium,4,4,0,3750.58,937.64
+M021,"Hunt, Anderson and Scott",Retail,Low,3,3,0,11434.02,3811.34
+M048,Thompson Ltd,Retail,Medium,3,3,0,10828.79,3609.6
+M044,"Lopez, Hampton and Howard",Retail,Low,3,3,0,9918.07,3306.02
+M047,Estrada Inc,Retail,Low,3,3,0,9786.5,3262.17
+M058,Frederick Group,Travel,Low,3,3,0,8968.4,2989.47

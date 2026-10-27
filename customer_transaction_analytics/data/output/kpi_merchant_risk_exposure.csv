@@ -1,0 +1,4 @@
+merchant_risk_level,merchants,customers,transactions,total_value,txn_share_pct,value_share_pct
+High,2,4,4,8949.14,4.0,3.76
+Medium,10,18,22,39829.39,22.0,16.75
+Low,36,40,74,188960.95,74.0,79.48

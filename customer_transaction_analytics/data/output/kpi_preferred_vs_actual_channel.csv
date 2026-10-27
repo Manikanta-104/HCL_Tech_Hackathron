@@ -1,0 +1,10 @@
+preferred_channel,actual_channel,transactions
+ATM,ATM,9
+ATM,Branch,7
+ATM,Digital,8
+Branch,ATM,11
+Branch,Branch,10
+Branch,Digital,10
+Digital,ATM,11
+Digital,Branch,20
+Digital,Digital,14

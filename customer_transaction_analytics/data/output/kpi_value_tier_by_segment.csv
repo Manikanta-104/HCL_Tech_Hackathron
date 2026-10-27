@@ -1,0 +1,10 @@
+value_tier,segment,customers,total_spend
+High Value,Premium,3,25173.32
+High Value,Standard,6,61296.93
+High Value,Student,7,53608.56
+Mid Value,Premium,7,32205.86
+Mid Value,Standard,6,24063.4
+Mid Value,Student,3,12842.65
+Low Value,Premium,5,8036.64
+Low Value,Standard,6,12694.67
+Low Value,Student,4,7817.45

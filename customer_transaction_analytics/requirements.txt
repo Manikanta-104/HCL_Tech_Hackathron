@@ -1,0 +1,7 @@
+# Customer Transaction Analytics Platform
+# Python 3.10 or newer. SQLite ships with Python (sqlite3 module), nothing to install.
+
+pandas>=2.0
+numpy>=1.24
+streamlit>=1.50
+plotly>=5.18

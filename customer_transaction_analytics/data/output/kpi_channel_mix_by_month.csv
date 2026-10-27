@@ -1,0 +1,7 @@
+year_month,channel,transactions,share_within_month_pct
+2026-01,ATM,18,40.91
+2026-01,Branch,17,38.64
+2026-01,Digital,9,20.45
+2026-02,ATM,13,23.21
+2026-02,Branch,20,35.71
+2026-02,Digital,23,41.07
